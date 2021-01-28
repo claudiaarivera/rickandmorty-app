@@ -1,0 +1,54 @@
+.custom-select{
+   --height: calc(15px * 2 + 1rem + 10px);
+   position: relative; 
+}
+@media (max-width: 620px){
+    .custom-select{
+        margin-bottom: 10px;
+    }
+}
+.select{
+    width: 100%;
+    padding: 15px 85px 15px 25px;
+    min-height: var(--height);
+    border: 1.5px solid var(--grayDark);
+    border-radius: 30px;
+    color: var(--grayDark);
+    font-weight: 600;
+    background: transparent;
+    appearance: none;
+    transition: border .2s ease-in, color .2s ease-in, box-shadow .2s ease-in;
+}
+.select:focus ~ .arrow::before{
+    content: "\f106";
+    color: var(--pink);
+}
+.select:focus{
+    border-color: var(--pink);
+    color: var(--pink);
+    box-shadow: 0px 0px 0px 1px var(--pink);
+}
+.select option{
+    color: var(--black);
+}
+.arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: var(--height);
+    pointer-events: none;
+    
+}
+.arrow::before{
+    content: "\f107";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--grayDark);
+    transition: color .2s ease-in;
+}

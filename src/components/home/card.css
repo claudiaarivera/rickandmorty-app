@@ -1,0 +1,109 @@
+.card{
+    --minHeightHeader: 135px;
+    position: relative;
+    background-color: var(--white);
+    margin-top: calc(var(--minHeightHeader) / 2 + 30px);
+    padding-top: calc((var(--minHeightHeader) / 2) + 10px);
+    box-shadow: 0px 11px 15px rgb(124 124 124 / 15%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card--character
+.card__head{
+    min-height: var(--minHeightHeader);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--yellow);
+    border-radius: calc(var(--minHeightHeader) / 2);
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%);
+    padding: 20px 30px;
+    box-shadow: 0 1px 8px rgba(85, 85, 85, 25%);
+}
+.card--character
+.card__image{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--white);
+    margin-right: 30px;
+}   
+.card--character
+.card__title{
+    margin-bottom: 5px;
+}
+.card__tag{
+    --height: 35px;
+    display: inline-block;
+    height: var(--height);
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--pink);
+    border-radius: calc(var(--height) / 2);
+    line-height: var(--height);
+    color: var(--white);
+    font-weight: 500;
+    font-size: .875rem;
+}
+.card--character
+.card__body{
+    padding: 20px 30px;
+}
+.card--character
+.card__text{
+    margin-bottom: 5px;
+}
+.card--character
+.card__text span{
+    font-weight: 700;
+}
+.card--character
+.card__footer{
+    padding: 20px 30px;
+    box-shadow: 0 -1px 0 #efefef;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background .3s ease-in-out;
+}
+
+.card--character:hover
+.card__footer{
+    background-color: var(--gray);
+}
+.card__status{
+    display: flex;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.status__title{
+    margin-right: auto;
+    text-transform: uppercase;
+}
+.status__text{
+    position: relative;
+    padding-right: 8px;
+}
+.status::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--green);
+    border-radius: 50%;
+    margin-left: 8px;
+}
+.status--alive::after{
+    background-color: var(--green);
+}
+.status--unknown::after{
+    background-color: var(--grayDark);
+}
+.status--dead::after{
+    background-color: var(--red);
+}

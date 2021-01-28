@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/css/main.cf336f22.chunk.css",
+    "main.js": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/js/main.e1e1e404.chunk.js",
+    "main.js.map": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/js/main.e1e1e404.chunk.js.map",
+    "runtime-main.js": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/js/runtime-main.6c69db50.js",
+    "runtime-main.js.map": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/js/runtime-main.6c69db50.js.map",
+    "static/js/2.fc923b84.chunk.js": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/js/2.fc923b84.chunk.js",
+    "static/js/2.fc923b84.chunk.js.map": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/js/2.fc923b84.chunk.js.map",
+    "index.html": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/index.html",
+    "static/css/main.cf336f22.chunk.css.map": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/css/main.cf336f22.chunk.css.map",
+    "static/js/2.fc923b84.chunk.js.LICENSE.txt": "/claudiaarivera/rickandmorty-app.git%E2%80%8B/static/js/2.fc923b84.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6c69db50.js",
+    "static/js/2.fc923b84.chunk.js",
+    "static/css/main.cf336f22.chunk.css",
+    "static/js/main.e1e1e404.chunk.js"
+  ]
+}

@@ -42,7 +42,7 @@ export default class CharacterList extends Component{
         this.setState({
             loading: false
         });
-        console.log(this.state.loading + "load")
+        console.log(process.env.PUBLIC_URL)
         const characterList = await getAllCharacters(this.state.currentPage);
         if (characterList) {
             this.setState({

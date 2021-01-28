@@ -9,12 +9,12 @@ export default class Header extends Component{
             <header className="header">
                 <div className="wrapper">
                     <nav className="nav">
-                        <Link to={process.env.PUBLIC_URL + '/'} className="nav__logo">
+                        <Link to='/' className="nav__logo">
                             <h1 className="title">Rick and Morty App</h1>
                         </Link>
                         <ul className="nav__menu">
                             <li className="nav__item">
-                                <NavLink to={process.env.PUBLIC_URL + '/'} className="nav__link" exact activeClassName="nav__link--active">Home</NavLink> 
+                                <NavLink to='/' className="nav__link" exact activeClassName="nav__link--active">Home</NavLink> 
                             </li>
                             <li className="nav__item">
                                 <NavLink to={process.env.PUBLIC_URL + '/about'} className="nav__link" activeClassName="nav__link--active">About</NavLink> 

@@ -42,7 +42,6 @@ export default class CharacterList extends Component{
         this.setState({
             loading: false
         });
-        console.log(process.env.PUBLIC_URL)
         const characterList = await getAllCharacters(this.state.currentPage);
         if (characterList) {
             this.setState({
@@ -80,6 +79,7 @@ export default class CharacterList extends Component{
     render(){
         return (
             <>
+            <p>{process.env.PUBLIC_URL}</p>
             <section className="section section--characters">      
             <h2 className="section__title">There are <span className="characteres__count">{this.state.totalCharacters}</span> characters, find your favorite 🚀</h2>
                     <div className="characteres__top">

@@ -79,7 +79,6 @@ export default class CharacterList extends Component{
     render(){
         return (
             <>
-            <p>{process.env.PUBLIC_URL}</p>
             <section className="section section--characters">      
             <h2 className="section__title">There are <span className="characteres__count">{this.state.totalCharacters}</span> characters, find your favorite 🚀</h2>
                     <div className="characteres__top">

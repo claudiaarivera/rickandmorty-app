@@ -7,14 +7,6 @@ import About from './components/about/About';
 function App() {
   return (
     <>
-      {/*<Router>
-            <Header />
-            <Switch>
-                <Route path="/" component={Home} exact/>
-                <Route path="/about" component={About} />
-            </Switch>
-      </Router>*/}
-        
         <Layout>
           <Switch>
               <Route path="/" component={Home} exact/>
